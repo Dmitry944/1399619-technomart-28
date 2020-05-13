@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dmitry Sholudko](https://up.htmlacademy.ru/htmlcss/28/user/1399619).
-* Наставник: `Сергей Зубов`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
