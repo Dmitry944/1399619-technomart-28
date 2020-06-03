@@ -1,48 +1,11 @@
-/* cuprum-regular - latin_cyrillic */
-@font-face {
-  font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cuprum Regular'), local('Cuprum-Regular'),
-       url('fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/cuprum.woff') format('woff'); /* Modern Browsers */
-}
-/* cuprum-700 - latin_cyrillic */
-@font-face {
-  font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Cuprum Bold'), local('Cuprum-Bold'),
-       url('fonts/cuprumbold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/cuprumbold.woff') format('woff'); /* Modern Browsers */
-}
-/* pt-sans-regular - latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'),
-       url('fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/ptsans.woff') format('woff'); /* Modern Browsers */
-}
-/* pt-sans-700 - latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-       url('fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/ptsansbold.woff') format('woff'); /* Modern Browsers */
-}
-
 :root {
   --basic-black: #000000;
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-grey: #3D546F;
   --basic-greylight: #C5C5C5;
-  --basic-background: #F1F5F7;
-  --wight: #FFFFFF;
+  --basic-darkwhite: #F1F5F7;
+  --white: #FFFFFF;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
@@ -50,11 +13,22 @@
   --special-yellowlight: #FFD180;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -71,8 +45,7 @@ img {
 }
 
 .main-header {
-  background-color: var(--basic-background);
-  background-image: url(../img/header-background.jpg);
+  background-color: var(--basic-darkwhite);
 }
 
 .main-headline {
@@ -80,12 +53,12 @@ img {
   line-height: 24px;
   /* width: 1200px;
   height: 42px; */
-  color: var(--wight);
+  color: var(--white);
   background-color: #293449;
 }
 
 .main-headline a {
-  color: var(--wight)
+  color: var(--white)
 }
 
 .main-headline-logo {
@@ -142,7 +115,7 @@ img {
   line-height: 30px;
   font-weight: bold;
   color: var(--basic-red);
-  border: 3px solid var(--wight);
+  border: 3px solid var(--white);
   padding-top: 7px;
   padding-right: 45px;
   padding-bottom: 8px;
@@ -174,19 +147,23 @@ img {
   color: var(--basic-greylight);
 }
 
-.user-navigation-items a:first-child {
+.user-navigation-profile {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
 }
 
-.user-navigation-items a:last-child {
+.user-navigation-output {
   color: var(--basic-greylight);
 }
 
-.user-navigation-items a:last-child:hover,
-.user-navigation-items a:last-child:focus {
+.user-navigation-output:hover,
+.user-navigation-output:focus {
   color: var(--basic-grey);
+}
+
+.user-navigation-items a:active {
+  color: var(--basic-greylight);
 }
 
 .user-cabinet-list li {
@@ -204,25 +181,19 @@ img {
   color: var(--basic-red)
 }
 
-.user-navigation-items a:active {
-  color: var(--basic-greylight);
-}
-
 .user-cabinet-item a:active {
   color: var(--basic-greylight);
 }
 
 
 .main-navigation {
-  width: 940px;
-  height: 60px;
   background-color: #32425C;
   box-shadow: inset 0px -5px 0px #293449;
 }
 
 .main-navigation a {
   font-size: 18px;
-  color: var(--wight);
+  color: var(--white);
 }
 
 .main-navigation a:hover,
@@ -241,7 +212,7 @@ img {
 }
 
 .container p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .slogan-item {
@@ -253,7 +224,7 @@ line-height: 24px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--wight);
+  color: var(--white);
   background-color: var(--basic-red);
   padding: 10px 40px;
 }
@@ -262,7 +233,7 @@ line-height: 24px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--wight);
+  color: var(--white);
   background-color: var(--basic-red);
   padding: 10px 61px;
 }
@@ -276,9 +247,7 @@ line-height: 24px;
 }
 
 .page-footer {
-  color: var(--wight);
   background-color: #32425C;
-  background-image: url(../img/footer-nav-bg.jpg);
 }
 
 .footer-nav-list li {
@@ -288,24 +257,24 @@ line-height: 24px;
 .footer-nav-list a {
   font-size: 18px;
   line-height: 24px;
-  color: var(--wight);
+  color: var(--white);
 }
 
 .footer-nav-list a:hover,
 .footer-nav-list a:focus {
-  color: var(--basic-background);
+  color: var(--basic-darkwhite);
   text-decoration: underline;
 }
 
 .footer-nav-list a:active {
-  color: var(--basic-background);
+  color: var(--basic-darkwhite);
   opacity: 0.5;
 }
 
 .footer-contacts {
   font-size: 18px;
   line-height: 24px;
-  color: var(--basic-background);
+  color: var(--basic-darkwhite);
 }
 
 .footer-contacts address {
@@ -313,7 +282,7 @@ line-height: 24px;
 }
 
 .footer-contacts a {
-  color: var(--basic-background);
+  color: var(--basic-darkwhite);
 }
 
 .footer-nav-items li {
@@ -336,13 +305,13 @@ line-height: 24px;
 }
 
 .footer-social {
-  background-image: url(../img/footer-info-bg.jpg);
+  background-color: #293449;
 }
 
 .copyright p {
   font-size: 16px;
   line-height: 18px;
-  color: var(--wight);
+  color: var(--white);
 }
 
 .social-icon-list li {
@@ -352,7 +321,7 @@ line-height: 24px;
 .develop p {
   font-size: 16px;
   line-height: 18px;
-  color: var(--wight);
+  color: var(--white);
 }
 
 .develop a {
