@@ -31,6 +31,7 @@ body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  font-style: normal;
   font-weight: normal;
   color: var(--basic-black);
 }
@@ -132,7 +133,7 @@ img {
   list-style: none;
 }
 
-.user-navigation-item a{
+.user-navigation-item a {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -170,7 +171,7 @@ img {
   list-style: none;
 }
 
-.user-cabinet-item a{
+.user-cabinet-item a {
   font-size: 16px;
   line-height: 18px;
   color: #32425C;
@@ -205,10 +206,86 @@ img {
   opacity: 0.5;
 }
 
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.main-heading {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+  font-weight: normal;
+  background-color: var(--basic-darkwhite);
+}
+
+.filter-box legend {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter-list li {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.filter button {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.products li {
+  list-style: none;
+}
+
+.card-product {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.card-product a h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.card-product del {
+  font-size: 17px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.card-product a.new-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+}
+
 .container h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .container p {
@@ -243,6 +320,10 @@ line-height: 24px;
 }
 
 .letter {
+  display: none;
+}
+
+.basket-box {
   display: none;
 }
 

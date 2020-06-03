@@ -58,7 +58,7 @@
   </nav>
 </header>
 <main>
-  <ul>
+  <ul class="breadcrumbs">
     <li>
       <a href="index.html"></a>
     </li>
@@ -70,13 +70,13 @@
     </li>
     <li>Перфораторы</li>
   </ul>
-  <h2>Перфораторы</h2>
+  <h2 class="main-heading">Перфораторы</h2>
   <section>
     <p>Фильтр:</p>
-    <form action="https://echo.htmlacademy.ru/courses" method="GET">
-      <fieldset>
+    <form class="filter" action="https://echo.htmlacademy.ru/courses" method="GET">
+      <fieldset class="filter-box">
         <legend>Производители:</legend>
-        <ul>
+        <ul class="filter-list">
           <li>
             <input type="checkbox" name="bosch" id="bosch-field" checked>
             <label for="bosch-field">BOSCH</label>
@@ -94,14 +94,14 @@
             <label for="dewalt-field">DEWALT</label>
           </li>
           <li>
-            <input type="checkbox" name="hitachi" id="hitachi-field">
+            <input class="checkbox-item" type="checkbox" name="hitachi" id="hitachi-field">
             <label for="hitachi-field">HITACHI</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="filter-box">
         <legend>Питание:</legend>
-        <ul>
+        <ul class="filter-list">
           <li>
             <input type="radio" name="power-supply" value="battery" id="battery-field" checked>
             <label for="battery-field">Аккумуляторные</label>
@@ -131,9 +131,21 @@
     <a href="#"></a>
   </div>
   </section>
-  <ul>
+  <ul class="products">
     <li>
-      <article>
+      <article class="card-product">
+        <div>
+          <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
+        </div>
+        <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
+        <del>30500 Р.</del>
+        <a class="new-price" href="#">25500 Р.</a>
+      </article>
+    </li>
+    <li>
+      <article class="card-product">
         <div>
           <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           <a href="#">Купить</a>
@@ -145,7 +157,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           <a href="#">Купить</a>
@@ -157,19 +169,7 @@
       </article>
     </li>
     <li>
-      <article>
-        <div>
-          <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
-          <a href="#">Купить</a>
-          <a href="#">В закладки</a>
-        </div>
-        <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
-        <del>30500 Р.</del>
-        <a href="#">25500 Р.</a>
-      </article>
-    </li>
-    <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg3000.jpg" width="127" height="112" alt="BOSCH BFG 3000">
           <a href="#">Купить</a>
@@ -181,7 +181,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           <a href="#">Купить</a>
@@ -193,7 +193,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg2000.jpg" width="127" height="112" alt="BOSCH BFG 2000">
           <a href="#">Купить</a>
@@ -204,7 +204,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg3000.jpg" width="127" height="112" alt="BOSCH BFG 3000">
           <a href="#">Купить</a>
@@ -216,7 +216,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           <a href="#">Купить</a>
@@ -228,7 +228,7 @@
       </article>
     </li>
     <li>
-      <article>
+      <article class="card-product">
         <div>
           <img src="img/bfg2000.jpg" width="127" height="112" alt="BOSCH BFG 2000">
           <a href="#">Купить</a>
@@ -261,7 +261,7 @@
       В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
     </p>
   </section>
-  <section>
+  <section class="basket-box">
     <button type="button">Закрыть</button>
     <h3>Товар добавлен в корзину!</h3>
     <div>
