@@ -219,7 +219,7 @@ img {
 }
 
 .breadcrumbs a {
-  color: var(--basic-black);
+  color: inherit
 }
 
 .main-heading {
@@ -231,8 +231,11 @@ img {
   background-color: var(--basic-darkwhite);
 }
 
-.filter-box legend {
+.filter {
   font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.filter-box legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -240,7 +243,6 @@ img {
 }
 
 .filter-list li {
-  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -248,7 +250,7 @@ img {
 }
 
 .filter button {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: inherit;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -263,7 +265,7 @@ img {
   font-weight: bold;
 }
 
-.card-product a h3 {
+.title-card {
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-black);
@@ -275,7 +277,7 @@ img {
   color: #A9A9A9;
 }
 
-.card-product a.new-price {
+.new-price {
   font-size: 17px;
   line-height: 18px;
   color: var(--white);
