@@ -16,8 +16,11 @@
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
       </a>
       <form class="main-headline-search" action="https://echo.htmlacademy.ru/courses" method="GET">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input type="search" class="search-input" id="search" placeholder="Поиск:">
+        <label class="search" for="search">
+          <span class="visually-hidden">Поиск по сайту</span>
+          <input type="search" class="search-input" id="search" placeholder="Поиск:">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+        </label>
       </form>
       <div class="main-headline-link">
         <a class="main-headline-bookmarks" href="#">Закладки: 0</a>
@@ -34,7 +37,7 @@
         и инструментов для ремонта
       </p>
       <div class="contact-information">
-        <a href="tel:+78125550555">+7(812) 555-05-55</a>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
       <ul class="user-navigation-list clear-ul">
@@ -65,6 +68,7 @@
           Материалы
         </p>
         <a href="#">На любой вкус</a>
+        <div class="new">new</div>
       </div>
       <div class="assortment-box tools-block">
         <p>
@@ -94,6 +98,11 @@
           </p>
         </div>
         <a href="catalog.html">Открыть каталог</a>
+        <div class="indicator-box">
+          <div class="indicator indicator-left"></div>
+          <div class="indicator"></div>
+        </div>
+
       </div>
       <div class="assortment-box discounts-block">
         <p>
@@ -136,6 +145,7 @@
         <a href="#"><h3 class="title-card">Перфоратор BOSCH BFG 3000</h3></a>
         <del>22500 Р.</del>
         <a class="new-price" href="#">15500 Р.</a>
+        <div class="new">new</div>
       </article>
       <article class="card-product new-price-product">
         <div>
@@ -159,6 +169,7 @@
         </div>
         <a href="#"><h3 class="title-card">Перфоратор BOSCH BFG 2000</h3></a>
         <a class="new-price" href="#">12500 Р.</a>
+        <div class="new">new</div>
       </article>
     </section>
     <section class="popular popular-manufacturers">
@@ -213,6 +224,7 @@
               <button class="button-service">Кредит</button>
             </li>
           </ul>
+          <div class="strip"></div>
           <div class="options-review">
           <section class="delivery">
             <h2>Доставка</h2>
@@ -277,28 +289,29 @@
         <a href="#">Заблудились? Напишите нам!</a>
       </section>
       </div>
-    <div class="big-map">
-      <button type="button">Закрыть</button>
+    <div class="big-map popup">
+      <button class="close" type="button" aria-label="Закрыть"></button>
       <img src="img/big-map.png" width="1736" height="779" alt="Крупная схема проезда">
     </div>
-    <section class="letter">
+    <section class="letter popup">
       <h2 class="visually-hidden">Личный кабинет</h2>
-      <button type="button">Закрыть</button>
+      <button class="close" type="button" aria-label="Закрыть"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" id="email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="letter">Текст письма:</label>
-          <textarea id="letter" rows="6" cols="100" placeholder="В свободной форме">
-        </textarea>
-        </p>
-        <div>
+        <div class="letter-form">
+          <p class="letter-item">
+            <label for="name">Ваше имя:</label>
+            <input class="data-input" type="text" id="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p class="letter-item">
+            <label for="email">Ваш e-mail:</label>
+            <input class="data-input" type="email" id="email" placeholder="email@example.com" required>
+          </p>
+          <p class="letter-item letter-item-text">
+            <label for="letter">Текст письма:</label>
+            <textarea id="letter" class="text-letter data-input" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="popup-footer">
           <button type="submit">Отправить</button>
         </div>
       </form>
