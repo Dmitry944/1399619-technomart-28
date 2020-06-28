@@ -115,12 +115,13 @@ img {
 }
 
 .main-headline-search {
+  position: relative;
   height: 100%;
 }
 
-.search {
+/* .search {
   position: relative;
-}
+} */
 
 .search-input:focus .search-icon {
   fill: var(--basic-red);
@@ -158,6 +159,10 @@ img {
   width: 270px;
   height: 100%;
   padding-left: 42px
+}
+
+.search-input-catalog {
+  width: 284px;
 }
 
 .main-headline-link {
@@ -214,6 +219,7 @@ img {
   padding-top: 9px;
   padding-left: 35px;
   background-color: var(--basic-red);
+  box-sizing: border-box;
 }
 
 .main-headline-basket-filled::before {
@@ -916,7 +922,6 @@ img {
   padding-top: 13.5px;
   padding-bottom: 17.5px;
   padding-left: 22px;
-  margin-bottom: 1px;
   color: var(--white);
   background-color: #32425C;
   border: none;
@@ -924,12 +929,19 @@ img {
   cursor: pointer;
 }
 
+.button-service-delivery {
+  color: #32425C;
+  background-color: var(--white);
+  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+}
+
 .button-service:hover,
 .button-service:focus {
   background-color: #293449;
+  color: var(--white);
 }
 
-.button-service:focus-within {
+.button-service:active {
   background-color: var(--white);
   color: #32425C;
   box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
@@ -1201,6 +1213,7 @@ img {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .price-controls input {
@@ -1288,6 +1301,14 @@ img {
   opacity: 0.3;
 }
 
+.separator {
+  width: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+}
+
 .filter-rage + label {
   position: relative;
   cursor: pointer;
@@ -1326,7 +1347,7 @@ img {
 }
 
 .inner-wrapper {
-  padding-bottom: 21px;
+  padding-bottom: 59px;
 }
 
 .sorting {
@@ -1377,7 +1398,7 @@ img {
 }
 
 .dir-up {
-  opacity: 0.3;
+  fill: var(--basic-red);
 }
 
 .dir-down {
@@ -1409,12 +1430,19 @@ img {
 
 .number-link {
   display: block;
+  margin-left: 10px;
   padding-top: 10px;
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
   border-radius: 2px;
   color: var(--basic-black);
+  box-sizing: border-box;
+}
+.number-link-first {
+  color: var(--white);
+  background-color: var(--basic-red);
+  margin: 0;
 }
 
 .number-next {
@@ -1995,19 +2023,21 @@ letter-item-text {
 
 .footer-social {
   background-color: #293449;
+  padding-top: 34px;
+  padding-bottom: 29px;
 }
 
 .wrapper-footer-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .copyright p {
   width: 227px;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
   color: var(--white);
 }
 
@@ -2049,6 +2079,7 @@ letter-item-text {
 .develop p {
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
   color: var(--white);
 }
 
