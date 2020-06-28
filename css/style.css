@@ -893,7 +893,6 @@ img {
 
 .service {
   background-color: var(--basic-darkwhite);
-  padding-bottom: 99px;
 }
 
 .service-heading {
@@ -952,6 +951,7 @@ img {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  padding-bottom: 4px;
 }
 
 .options-review {
@@ -973,7 +973,7 @@ img {
   content: "";
   width: 468px;
   height: 261px;
-  top: 20px;
+  top: 18px;
   right: 0;
   position: absolute;
   background-image: url(../img/background-delivery.png);
