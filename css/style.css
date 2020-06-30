@@ -119,10 +119,6 @@ img {
   height: 100%;
 }
 
-/* .search {
-  position: relative;
-} */
-
 .search-input:focus .search-icon {
   fill: var(--basic-red);
 }
@@ -893,6 +889,7 @@ img {
 
 .service {
   background-color: var(--basic-darkwhite);
+  padding-bottom: 98px;
 }
 
 .service-heading {
@@ -952,6 +949,7 @@ img {
   align-items: start;
   justify-content: space-between;
   padding-bottom: 4px;
+  position: relative;
 }
 
 .options-review {
@@ -960,9 +958,12 @@ img {
 }
 
 .strip {
+  position: absolute;
+  top: -47px;
+  left: 230px;
+  background-image: url(../img/line.png);
   width: 10px;
   height: 279px;
-  background-color: var(--basic-darkwhite);
 }
 
 /* .delivery {
