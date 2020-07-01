@@ -119,8 +119,9 @@ img {
   height: 100%;
 }
 
-.search-input:focus .search-icon {
+.search-input:focus + .search-icon {
   fill: var(--basic-red);
+  opacity: 1 ;
 }
 
 .search-icon {
@@ -957,7 +958,8 @@ img {
   width: 630px;
 }
 
-.strip {
+.strip::after {
+  content: "";
   position: absolute;
   top: -47px;
   left: 230px;
